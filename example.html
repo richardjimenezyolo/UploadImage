@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<div id="editorjs"></div>
+	<script src="https://cdn.jsdelivr.net/npm/@editorjs/simple-image@latest"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+	<script src="UploadImage.js"></script>
+
+	<form id="img-form">
+		<input type="file" name="img" id="img" style="display: none;">
+	</form>
+
+	<script>
+		
+		const editor = new EditorJS({
+			tools:{
+				image: SimpleImage,
+				
+				upload: {
+					class: UploadImage,
+					config: {
+						server: "https://noterja.glitch.me/"
+					}
+				}
+			}
+		})
+	</script>
+</body>
+</html>
