@@ -10,7 +10,7 @@ First to use this plugin you need to just these simples html tags:
 
 <!-- this is a form which will load and send the actual image -->
 <form id="img-form">
-		<input type="file" name="img" id="img-input" style="display: none;">
+	<input type="file" name="img" id="img-input" style="display: none;">
 </form>
 ```
 
