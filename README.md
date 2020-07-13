@@ -24,7 +24,7 @@ const editor = new EditorJS({
         upload: {
             class: UploadImage,
             config: {
-                server: "http://yoursite.com/upload" // Here you can write your backend url
+                server: "http://yoursite.com/upload" // Here you can write your backend's url
             }
         }
     }
